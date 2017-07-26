@@ -1,5 +1,5 @@
-# study-vue
-### Vue.js 五天 *汤小洋*
+
+### Vue.js David-gao
 
 ## 一、 Vue.js简介
 
