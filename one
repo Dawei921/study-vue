@@ -30,9 +30,22 @@
   配合css: [v-cloak]{display:none}
 
 9、<h3 v-once>{{msg}}</h3> 只读取一次
+
 10、v-html、v-text
-11、过滤器
-      全局过滤器：
-         Vue.filter('obj',function(data){
-           return data;
-         }
+         
+11、toFixed() 四舍五入
+
+12、自定义全局过滤器
+   Vue.filter('addZero',(data) => {
+     return data;
+   }
+13、局部过滤器
+  filters:{
+     number: (data,n)=>{
+          return data.toFixed(n);
+     }
+   
+   
+   
+   
+   
