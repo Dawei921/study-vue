@@ -1,0 +1,38 @@
+1、Vue.config.devtools = false;
+     Vue.config.productionTip = false;
+      使控制台不显示提示信息
+2、$event;
+      在函数中传这个参数，表示传入此方法；
+      print(e){
+         e.target.innerHTML;--获得触发此方法中的内容
+3、this
+      在Vue中，this一般都表示Vue这个对象
+4、@click.stop="show()"
+     @click.prevent="show()"
+     stop:阻止默认事件
+     prevent:阻止默认行为
+5、@keydown = 'show($event)';--知道键盘的事件
+      @keydown.enter = 'show';
+      @keydown.up = 'show';
+      e.keyCode;--获得键盘的编码值
+
+6、自定义键名
+      Vue.config.keyCodes = {
+          a:65,
+          f1:13
+     }
+7、class的样式
+     写法一：<p  :class="bb">; --bb在data中进行配置
+     写法二:<p :class="[aa,bb]";--aa与bb在data中进行配置
+     写法三：<p :class="{cc:true,dd:true}";--cc与dd都是style中直接写的
+8、v-cloak 
+    阻止页面出现隐藏元素
+  配合css: [v-cloak]{display:none}
+
+9、<h3 v-once>{{msg}}</h3> 只读取一次
+10、v-html、v-text
+11、过滤器
+      全局过滤器：
+         Vue.filter('obj',function(data){
+           return data;
+         }
